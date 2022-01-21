@@ -2,7 +2,7 @@ name: parallel-jobs-actions-workflow
 on: push
 jobs:
   example-job-a:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
       - name: run script
