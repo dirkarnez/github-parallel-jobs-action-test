@@ -4,12 +4,14 @@ jobs:
   example-job-a:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Retrieve IP
         run: |
           ifconfig -a
   example-job-b:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Retrieve IP
         run: |
           ifconfig -a
