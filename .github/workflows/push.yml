@@ -1,0 +1,15 @@
+name: parallel-jobs-actions-workflow
+on: push
+jobs:
+  example-job-a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Retrieve IP
+        run: |
+          ifconfig -a
+  example-job-b:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Retrieve IP
+        run: |
+          ifconfig -a
